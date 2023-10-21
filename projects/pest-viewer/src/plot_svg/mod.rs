@@ -1,5 +1,5 @@
 use pest::iterators::{Pair, Pairs};
-use std::{borrow::Cow, cmp::max};
+use std::borrow::Cow;
 
 use crate::helper::{get_children, has_child, width_hint};
 use pest::RuleType;
@@ -113,6 +113,11 @@ fn safe_html(s: &str) -> String {
 }
 
 impl SvgPlotter {
+    /// Custom style css
+    pub fn with_style(self, s: impl Into<Cow<'static, str>>) -> Self {
+        Self { style: s.into(), ..self }
+    }
+
     /// Draw a svg
     pub fn draw<R>(&self, tree: Pairs<R>) -> SVG
     where

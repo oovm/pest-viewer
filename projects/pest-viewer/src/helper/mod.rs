@@ -1,6 +1,9 @@
 use std::cmp::max;
 
 use pest::{iterators::Pair, RuleType};
+use pest::error::Error;
+use pest_meta::parser::Rule;
+use pest_vm::Vm;
 
 pub fn width_hint<R>(node: Pair<R>) -> f64
 where
@@ -52,4 +55,10 @@ fn ignored_rule(rule: impl RuleType) -> bool {
         return true;
     }
     false
+}
+
+/// Create a parser by grammar
+pub fn create_parser(grammar: &str) -> Result<Vm, Vec<Error<Rule>>> {
+    let boot = pest_meta::parse_and_optimize(grammar)?;
+    Ok(pest_vm::Vm::new(boot.1))
 }

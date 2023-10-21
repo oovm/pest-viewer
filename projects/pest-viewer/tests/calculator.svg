@@ -1,7 +1,7 @@
 <svg viewBox="0 0 645 184" xmlns="http://www.w3.org/2000/svg">
 <rect class="node" height="32" rx="5" ry="5" width="168" x="224.66666666666663" y="8"/>
 <text class="node" x="308.66666666666663" y="24">
-"grammar_rule"
+grammar_rule
 </text>
 <line x1="308.66666666666663" x2="64" y1="40" y2="56"/>
 <rect class="leaf" height="32" rx="5" ry="5" width="96" x="16" y="56"/>
@@ -26,7 +26,7 @@ _
 <line x1="308.66666666666663" x2="431.3333333333333" y1="40" y2="56"/>
 <rect class="node" height="32" rx="5" ry="5" width="144" x="359.3333333333333" y="56"/>
 <text class="node" x="431.3333333333333" y="72">
-"expression"
+expression
 </text>
 <line x1="308.66666666666663" x2="553.3333333333333" y1="40" y2="56"/>
 <rect class="leaf" height="32" rx="5" ry="5" width="36" x="535.3333333333333" y="56"/>
@@ -36,7 +36,7 @@ _
 <line x1="431.3333333333333" x2="253.66666666666663" y1="88" y2="104"/>
 <rect class="node" height="32" rx="5" ry="5" width="71.99999999999997" x="217.66666666666666" y="104"/>
 <text class="node" x="253.66666666666663" y="120">
-"term"
+term
 </text>
 <line x1="431.3333333333333" x2="365.66666666666663" y1="88" y2="104"/>
 <rect class="leaf" height="32" rx="5" ry="5" width="36" x="347.66666666666663" y="104"/>
@@ -46,7 +46,7 @@ _
 <line x1="431.3333333333333" x2="448.3333333333333" y1="88" y2="104"/>
 <rect class="node" height="32" rx="5" ry="5" width="72" x="412.3333333333333" y="104"/>
 <text class="node" x="448.3333333333333" y="120">
-"term"
+term
 </text>
 <line x1="431.3333333333333" x2="523" y1="88" y2="104"/>
 <rect class="leaf" height="32" rx="5" ry="5" width="36" x="505" y="104"/>
@@ -56,7 +56,7 @@ _
 <line x1="431.3333333333333" x2="609" y1="88" y2="104"/>
 <rect class="node" height="32" rx="5" ry="5" width="72" x="573" y="104"/>
 <text class="node" x="609" y="120">
-"term"
+term
 </text>
 <line x1="253.66666666666663" x2="253.66666666666663" y1="136" y2="152"/>
 <rect class="leaf" height="32" rx="5" ry="5" width="35.99999999999997" x="235.66666666666666" y="152"/>
