@@ -1,0 +1,40 @@
+[package]
+name = "yggdrasil-viewer"
+version = "0.0.0"
+authors = ["Aster <192607617@qq.com>"]
+description = "..."
+repository = "https://github.com/oovm/sub_projects"
+documentation = "https://docs.rs/sub_projects"
+readme = "readme.md"
+license = "MPL-2.0"
+edition = "2021"
+exclude = ["package.json", "tests/**"]
+
+[dependencies]
+svg = "0.14.0"
+
+[dependencies.shape-svg]
+version = "0.0.*"
+#path = 'C:\Users\Dell\CLionProjects\shape-rs\projects\shape-svg'
+
+
+[dependencies.tree-layout]
+version = "0.0.*"
+path = "../tree-layout"
+
+[dependencies.yggdrasil-rt]
+version = "0.0.*"
+#path = 'C:\Users\Dell\CLionProjects\yggdrasil.rs\projects\ygg-rt'
+
+[dev-dependencies]
+
+[dev-dependencies.yggdrasil-parser]
+version = "0.1.*"
+#path = 'C:\Users\Dell\CLionProjects\yggdrasil.rs\projects\ygg-parser'
+
+
+[features]
+default = []
+
+[package.metadata.docs.rs]
+all-features = true
