@@ -1,6 +1,5 @@
-use yggdrasil_parser::{bootstrap::BootstrapRule, BootstrapParser};
-use yggdrasil_rt::YggdrasilParser;
-use yggdrasil_viewer::SvgPlotter;
+use pest_viewer::SvgPlotter;
+
 
 #[test]
 fn ready() {
@@ -21,7 +20,7 @@ token {
     OP_REMARK: '^'
 }
 "##;
-    let cst = BootstrapParser::parse_cst(text, BootstrapRule::Root).unwrap();
+    let cst = pest_vm::Vm::parse(text, BootstrapRule::Root).unwrap();
     println!("Short Form:\n{}", cst);
     let tree = plotter.draw(cst);
     svg::save("tests/bootstrap.svg", &tree).unwrap();

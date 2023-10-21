@@ -1,62 +1,61 @@
-use std::cmp::max;
+use pest::iterators::{Pair, Pairs};
+use std::{borrow::Cow, cmp::max};
 
+use crate::helper::width_hint;
+use pest::RuleType;
 use shape_svg::ToSVG;
 use svg::{
     node::element::{Text, SVG},
     Document,
 };
-use yggdrasil_rt::{TokenPair, TokenTree, YggdrasilRule};
-
 use tree_layout::{layout, Line, NodeInfo, Point, TreeBox};
 
 /// Plot a svg structure
-#[derive(Debug, Default)]
+#[derive(Debug)]
 pub struct SvgPlotter {
-    color: String,
+    style: Cow<'static, str>,
+}
+
+impl Default for SvgPlotter {
+    fn default() -> Self {
+        Self { style: Cow::Borrowed(include_str!("style.css")) }
+    }
 }
 
 #[derive(Debug)]
 struct SvgTree<'i, R>
 where
-    R: YggdrasilRule,
+    R: RuleType,
 {
-    cst: TokenTree<'i, R>,
+    cst: Pairs<'i, R>,
 }
 
-impl<'i, R> NodeInfo<TokenPair<'i, R>> for SvgTree<'i, R>
+impl<'i, R> NodeInfo<Pair<'i, R>> for SvgTree<'i, R>
 where
-    R: YggdrasilRule,
+    R: RuleType,
 {
-    type Key = TokenPair<'i, R>;
+    type Key = Pair<'i, R>;
 
-    fn key(&self, node: TokenPair<'i, R>) -> Self::Key {
+    fn key(&self, node: Pair<'i, R>) -> Self::Key {
         node
     }
 
-    fn children(&self, node: TokenPair<'i, R>) -> impl Iterator<Item = TokenPair<'i, R>> {
-        node.into_inner().filter(|s| !s.get_rule().is_ignore())
+    fn children(&self, node: Pair<'i, R>) -> impl Iterator<Item = Pair<'i, R>> {
+        node.into_inner().filter(|s| !s.as_rule().is_ignore())
     }
 
-    fn dimensions(&self, node: TokenPair<'i, R>) -> TreeBox {
+    fn dimensions(&self, node: Pair<'i, R>) -> TreeBox {
         let chars = width_hint(node);
         TreeBox::rectangle(chars * 6.0, 16.0)
     }
-    fn border(&self, _: TokenPair<'i, R>) -> TreeBox {
+    fn border(&self, _: Pair<'i, R>) -> TreeBox {
         TreeBox::rectangle(16.0, 8.0)
     }
 }
 
-fn width_hint<R>(node: TokenPair<R>) -> f64
-where
-    R: YggdrasilRule,
-{
-    let text = if node.has_child(false) { format!("{:?}", node.get_rule()) } else { node.get_string() };
-    max(text.len(), 3) as f64
-}
-
 impl<'i, R> SvgTree<'i, R>
 where
-    R: YggdrasilRule,
+    R: RuleType,
 {
     fn as_svg(&self) -> SVG {
         let mut document = Document::new();
@@ -85,11 +84,11 @@ where
 
             let mut text = Text::new().set("x", area.min.x + area.width() / 2.0).set("y", area.min.y + area.height() / 2.0);
             if pair.has_child(false) {
-                text = text.add(svg::node::Text::new(format!("{:?}", pair.get_rule()))).set("class", "node");
+                text = text.add(svg::node::Text::new(format!("{:?}", pair.as_rule()))).set("class", "node");
                 document = document.add(area.to_svg().set("rx", 5).set("ry", 5).set("class", "node"));
             }
             else {
-                text = text.add(svg::node::Text::new(format!("{}", pair.get_string()))).set("class", "leaf");
+                text = text.add(svg::node::Text::new(format!("{}", pair.as_str()))).set("class", "leaf");
                 document = document.add(area.to_svg().set("rx", 5).set("ry", 5).set("class", "leaf"));
             }
             document = document.add(text);
@@ -100,9 +99,9 @@ where
 
 impl SvgPlotter {
     /// Draw a svg
-    pub fn draw<R>(&self, tree: TokenTree<R>) -> SVG
+    pub fn draw<R>(&self, tree: Pairs<R>) -> SVG
     where
-        R: YggdrasilRule,
+        R: RuleType,
     {
         SvgTree { cst: tree }.as_svg()
     }

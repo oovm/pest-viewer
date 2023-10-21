@@ -5,4 +5,5 @@
 #![doc(html_favicon_url = "https://raw.githubusercontent.com/oovm/shape-rs/dev/projects/images/Trapezohedron.svg")]
 
 mod plot_svg;
+mod helper;
 pub use crate::plot_svg::SvgPlotter;
