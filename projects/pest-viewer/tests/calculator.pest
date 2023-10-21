@@ -1,0 +1,18 @@
+// We can't have SOI and EOI on expr directly, because it is used
+// recursively (e.g. with parentheses)
+equation = _{ SOI ~ expr ~ EOI }
+
+expr = { atom ~ (bin_op ~ atom)* }
+
+bin_op = _{ add | subtract | multiply | divide }
+    add = { "+" }
+    subtract = { "-" }
+    multiply = { "*" }
+    divide = { "/" }
+
+atom = _{ integer }
+
+// No whitespace allowed between digits
+integer = @{ ASCII_DIGIT+ }
+
+WHITESPACE = _{ " " }

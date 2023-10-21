@@ -1,0 +1,387 @@
+<svg viewBox="0 0 3173.3045510861693 472" xmlns="http://www.w3.org/2000/svg">
+<rect class="node" height="32" rx="5" ry="5" width="72" x="1652.6522755430847" y="8"/>
+<text class="node" x="1688.6522755430847" y="24">
+json
+</text>
+<line x1="1688.6522755430847" x2="1642.6522755430847" y1="40" y2="56"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1600.6522755430847" y="56"/>
+<text class="node" x="1642.6522755430847" y="72">
+value
+</text>
+<line x1="1688.6522755430847" x2="1734.6522755430847" y1="40" y2="56"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="1716.6522755430847" y="56"/>
+<text class="leaf" x="1734.6522755430847" y="72">
+
+</text>
+<line x1="1642.6522755430847" x2="1642.6522755430847" y1="88" y2="104"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1600.6522755430847" y="104"/>
+<text class="node" x="1642.6522755430847" y="120">
+array
+</text>
+<line x1="1642.6522755430847" x2="166" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="124" y="152"/>
+<text class="node" x="166" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="396" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="354" y="152"/>
+<text class="node" x="396" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="595.6359120454708" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="553.6359120454708" y="152"/>
+<text class="node" x="595.6359120454708" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="791.8600593850593" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="749.8600593850593" y="152"/>
+<text class="node" x="791.8600593850593" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="984.4592067246479" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="942.4592067246479" y="152"/>
+<text class="node" x="984.4592067246479" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="1173.1916873975697" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1131.1916873975697" y="152"/>
+<text class="node" x="1173.1916873975697" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="1357.7813109276344" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1315.7813109276344" y="152"/>
+<text class="node" x="1357.7813109276344" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="1537.9093959961606" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1495.9093959961606" y="152"/>
+<text class="node" x="1537.9093959961606" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="1713.2041477313535" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1671.2041477313535" y="152"/>
+<text class="node" x="1713.2041477313535" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="1883.2261721938191" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1841.2261721938191" y="152"/>
+<text class="node" x="1883.2261721938191" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="2047.4481966562848" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2005.4481966562848" y="152"/>
+<text class="node" x="2047.4481966562848" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="2205.225776674306" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2163.225776674306" y="152"/>
+<text class="node" x="2205.225776674306" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="2355.753356692327" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2313.753356692327" y="152"/>
+<text class="node" x="2355.753356692327" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="2497.995222424634" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2455.995222424634" y="152"/>
+<text class="node" x="2497.995222424634" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="2630.5704214902744" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2588.5704214902744" y="152"/>
+<text class="node" x="2630.5704214902744" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="2751.545620555915" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2709.545620555915" y="152"/>
+<text class="node" x="2751.545620555915" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="2858.0208196215553" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2816.0208196215553" y="152"/>
+<text class="node" x="2858.0208196215553" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="2945.1626853538623" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2903.1626853538623" y="152"/>
+<text class="node" x="2945.1626853538623" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="3003.3045510861693" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2961.3045510861693" y="152"/>
+<text class="node" x="3003.3045510861693" y="168">
+value
+</text>
+<line x1="1642.6522755430847" x2="3119.3045510861693" y1="136" y2="152"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="3077.3045510861693" y="152"/>
+<text class="node" x="3119.3045510861693" y="168">
+value
+</text>
+<line x1="166" x2="166" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="300" x="16" y="200"/>
+<text class="leaf" x="166" y="216">
+&quot;JSON Test Pattern pass1&quot;
+</text>
+<line x1="396" x2="396" y1="184" y2="200"/>
+<rect class="node" height="32" rx="5" ry="5" width="96" x="348" y="200"/>
+<text class="node" x="396" y="216">
+object
+</text>
+<line x1="595.6359120454708" x2="595.6359120454708" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="577.6359120454708" y="200"/>
+<text class="leaf" x="595.6359120454708" y="216">
+{}
+</text>
+<line x1="791.8600593850593" x2="791.8600593850593" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="773.8600593850593" y="200"/>
+<text class="leaf" x="791.8600593850593" y="216">
+[]
+</text>
+<line x1="984.4592067246479" x2="984.4592067246479" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="966.4592067246479" y="200"/>
+<text class="leaf" x="984.4592067246479" y="216">
+-42
+</text>
+<line x1="1173.1916873975697" x2="1173.1916873975697" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="48" x="1149.1916873975697" y="200"/>
+<text class="leaf" x="1173.1916873975697" y="216">
+true
+</text>
+<line x1="1357.7813109276344" x2="1357.7813109276344" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="60" x="1327.7813109276344" y="200"/>
+<text class="leaf" x="1357.7813109276344" y="216">
+false
+</text>
+<line x1="1537.9093959961606" x2="1537.9093959961606" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="48" x="1513.9093959961606" y="200"/>
+<text class="leaf" x="1537.9093959961606" y="216">
+null
+</text>
+<line x1="1713.2041477313535" x2="1713.2041477313535" y1="184" y2="200"/>
+<rect class="node" height="32" rx="5" ry="5" width="96" x="1665.2041477313535" y="200"/>
+<text class="node" x="1713.2041477313535" y="216">
+object
+</text>
+<line x1="1883.2261721938191" x2="1883.2261721938191" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="1865.2261721938191" y="200"/>
+<text class="leaf" x="1883.2261721938191" y="216">
+0.5
+</text>
+<line x1="2047.4481966562848" x2="2047.4481966562848" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="48" x="2023.4481966562848" y="200"/>
+<text class="leaf" x="2047.4481966562848" y="216">
+98.6
+</text>
+<line x1="2205.225776674306" x2="2205.225776674306" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="60" x="2175.225776674306" y="200"/>
+<text class="leaf" x="2205.225776674306" y="216">
+99.44
+</text>
+<line x1="2355.753356692327" x2="2355.753356692327" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="48" x="2331.753356692327" y="200"/>
+<text class="leaf" x="2355.753356692327" y="216">
+1066
+</text>
+<line x1="2497.995222424634" x2="2497.995222424634" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="2479.995222424634" y="200"/>
+<text class="leaf" x="2497.995222424634" y="216">
+1e1
+</text>
+<line x1="2630.5704214902744" x2="2630.5704214902744" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="60" x="2600.5704214902744" y="200"/>
+<text class="leaf" x="2630.5704214902744" y="216">
+0.1e1
+</text>
+<line x1="2751.545620555915" x2="2751.545620555915" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="48" x="2727.545620555915" y="200"/>
+<text class="leaf" x="2751.545620555915" y="216">
+1e-1
+</text>
+<line x1="2858.0208196215553" x2="2858.0208196215553" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="48" x="2834.0208196215553" y="200"/>
+<text class="leaf" x="2858.0208196215553" y="216">
+1e00
+</text>
+<line x1="2945.1626853538623" x2="2945.1626853538623" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="60" x="2915.1626853538623" y="200"/>
+<text class="leaf" x="2945.1626853538623" y="216">
+2e+00
+</text>
+<line x1="3003.3045510861693" x2="3003.3045510861693" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="60" x="2973.3045510861693" y="200"/>
+<text class="leaf" x="3003.3045510861693" y="216">
+2e-00
+</text>
+<line x1="3119.3045510861693" x2="3119.3045510861693" y1="184" y2="200"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="108" x="3065.3045510861693" y="200"/>
+<text class="leaf" x="3119.3045510861693" y="216">
+&quot;rosebud&quot;
+</text>
+<line x1="396" x2="396" y1="232" y2="248"/>
+<rect class="node" height="32" rx="5" ry="5" width="72" x="360" y="248"/>
+<text class="node" x="396" y="264">
+pair
+</text>
+<line x1="1713.2041477313535" x2="1288.2041477313535" y1="232" y2="248"/>
+<rect class="node" height="32" rx="5" ry="5" width="72" x="1252.2041477313535" y="248"/>
+<text class="node" x="1288.2041477313535" y="264">
+pair
+</text>
+<line x1="1713.2041477313535" x2="1517.2041477313535" y1="232" y2="248"/>
+<rect class="node" height="32" rx="5" ry="5" width="72" x="1481.2041477313535" y="248"/>
+<text class="node" x="1517.2041477313535" y="264">
+pair
+</text>
+<line x1="1713.2041477313535" x2="1720.2041477313535" y1="232" y2="248"/>
+<rect class="node" height="32" rx="5" ry="5" width="72" x="1684.2041477313535" y="248"/>
+<text class="node" x="1720.2041477313535" y="264">
+pair
+</text>
+<line x1="1713.2041477313535" x2="1932.2041477313535" y1="232" y2="248"/>
+<rect class="node" height="32" rx="5" ry="5" width="72" x="1896.2041477313535" y="248"/>
+<text class="node" x="1932.2041477313535" y="264">
+pair
+</text>
+<line x1="1713.2041477313535" x2="2138.2041477313533" y1="232" y2="248"/>
+<rect class="node" height="32" rx="5" ry="5" width="72" x="2102.2041477313533" y="248"/>
+<text class="node" x="2138.2041477313533" y="264">
+pair
+</text>
+<line x1="396" x2="293" y1="280" y2="296"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="264" x="161" y="296"/>
+<text class="leaf" x="293" y="312">
+&quot;object with 1 member&quot;
+</text>
+<line x1="396" x2="499" y1="280" y2="296"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="457" y="296"/>
+<text class="node" x="499" y="312">
+value
+</text>
+<line x1="1288.2041477313535" x2="1224.2041477313535" y1="280" y2="296"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="108" x="1170.2041477313535" y="296"/>
+<text class="leaf" x="1224.2041477313535" y="312">
+&quot;integer&quot;
+</text>
+<line x1="1288.2041477313535" x2="1352.2041477313535" y1="280" y2="296"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1310.2041477313535" y="296"/>
+<text class="node" x="1352.2041477313535" y="312">
+value
+</text>
+<line x1="1517.2041477313535" x2="1462.2041477313535" y1="280" y2="296"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="72" x="1426.2041477313535" y="296"/>
+<text class="leaf" x="1462.2041477313535" y="312">
+&quot;real&quot;
+</text>
+<line x1="1517.2041477313535" x2="1572.2041477313535" y1="280" y2="296"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1530.2041477313535" y="296"/>
+<text class="node" x="1572.2041477313535" y="312">
+value
+</text>
+<line x1="1720.2041477313535" x2="1674.2041477313535" y1="280" y2="296"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="1656.2041477313535" y="296"/>
+<text class="leaf" x="1674.2041477313535" y="312">
+&quot;e&quot;
+</text>
+<line x1="1720.2041477313535" x2="1766.2041477313535" y1="280" y2="296"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1724.2041477313535" y="296"/>
+<text class="node" x="1766.2041477313535" y="312">
+value
+</text>
+<line x1="1932.2041477313535" x2="1886.2041477313535" y1="280" y2="296"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="1868.2041477313535" y="296"/>
+<text class="leaf" x="1886.2041477313535" y="312">
+&quot;E&quot;
+</text>
+<line x1="1932.2041477313535" x2="1978.2041477313535" y1="280" y2="296"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="1936.2041477313535" y="296"/>
+<text class="node" x="1978.2041477313535" y="312">
+value
+</text>
+<line x1="2138.2041477313533" x2="2092.2041477313533" y1="280" y2="296"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="2074.2041477313533" y="296"/>
+<text class="leaf" x="2092.2041477313533" y="312">
+&quot;&quot;
+</text>
+<line x1="2138.2041477313533" x2="2184.2041477313533" y1="280" y2="296"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="2142.2041477313533" y="296"/>
+<text class="node" x="2184.2041477313533" y="312">
+value
+</text>
+<line x1="499" x2="499" y1="328" y2="344"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="457" y="344"/>
+<text class="node" x="499" y="360">
+array
+</text>
+<line x1="1352.2041477313535" x2="1352.2041477313535" y1="328" y2="344"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="120" x="1292.2041477313535" y="344"/>
+<text class="leaf" x="1352.2041477313535" y="360">
+1234567890
+</text>
+<line x1="1572.2041477313535" x2="1572.2041477313535" y1="328" y2="344"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="144" x="1500.2041477313535" y="344"/>
+<text class="leaf" x="1572.2041477313535" y="360">
+-9876.543210
+</text>
+<line x1="1766.2041477313535" x2="1766.2041477313535" y1="328" y2="344"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="180" x="1676.2041477313535" y="344"/>
+<text class="leaf" x="1766.2041477313535" y="360">
+0.123456789e-12
+</text>
+<line x1="1978.2041477313535" x2="1978.2041477313533" y1="328" y2="344"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="179.99999999999977" x="1888.2041477313535" y="344"/>
+<text class="leaf" x="1978.2041477313533" y="360">
+1.234567890E+34
+</text>
+<line x1="2184.2041477313533" x2="2184.2041477313533" y1="328" y2="344"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="168" x="2100.2041477313533" y="344"/>
+<text class="leaf" x="2184.2041477313533" y="360">
+23456789012E66
+</text>
+<line x1="499" x2="499" y1="376" y2="392"/>
+<rect class="node" height="32" rx="5" ry="5" width="84" x="457" y="392"/>
+<text class="node" x="499" y="408">
+value
+</text>
+<line x1="499" x2="499" y1="424" y2="440"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="264" x="367" y="440"/>
+<text class="leaf" x="499" y="456">
+&quot;array with 1 element&quot;
+</text>
+<style>
+svg line {
+    stroke: black;
+}
+
+svg rect {
+    fill: black;
+    stroke: none;
+    /*stroke-width: 0.2;*/
+}
+
+svg rect.node {
+    /*fill: #ff5246*/
+}
+
+svg rect.leaf {
+    fill: #77c63d
+}
+
+svg text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+    color: aliceblue;
+    fill: white;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+svg text.node {
+
+}
+
+svg text.leaf {
+
+}
+
+</style>
+</svg>

@@ -1,0 +1,112 @@
+<svg viewBox="0 0 645 184" xmlns="http://www.w3.org/2000/svg">
+<rect class="node" height="32" rx="5" ry="5" width="168" x="224.66666666666663" y="8"/>
+<text class="node" x="308.66666666666663" y="24">
+"grammar_rule"
+</text>
+<line x1="308.66666666666663" x2="64" y1="40" y2="56"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="96" x="16" y="56"/>
+<text class="leaf" x="64" y="72">
+equation
+</text>
+<line x1="308.66666666666663" x2="179" y1="40" y2="56"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="161" y="56"/>
+<text class="leaf" x="179" y="72">
+=
+</text>
+<line x1="308.66666666666663" x2="252.66666666666663" y1="40" y2="56"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="35.99999999999997" x="234.66666666666666" y="56"/>
+<text class="leaf" x="252.66666666666663" y="72">
+_
+</text>
+<line x1="308.66666666666663" x2="309.3333333333333" y1="40" y2="56"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="291.3333333333333" y="56"/>
+<text class="leaf" x="309.3333333333333" y="72">
+{
+</text>
+<line x1="308.66666666666663" x2="431.3333333333333" y1="40" y2="56"/>
+<rect class="node" height="32" rx="5" ry="5" width="144" x="359.3333333333333" y="56"/>
+<text class="node" x="431.3333333333333" y="72">
+"expression"
+</text>
+<line x1="308.66666666666663" x2="553.3333333333333" y1="40" y2="56"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="535.3333333333333" y="56"/>
+<text class="leaf" x="553.3333333333333" y="72">
+}
+</text>
+<line x1="431.3333333333333" x2="253.66666666666663" y1="88" y2="104"/>
+<rect class="node" height="32" rx="5" ry="5" width="71.99999999999997" x="217.66666666666666" y="104"/>
+<text class="node" x="253.66666666666663" y="120">
+"term"
+</text>
+<line x1="431.3333333333333" x2="365.66666666666663" y1="88" y2="104"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="347.66666666666663" y="104"/>
+<text class="leaf" x="365.66666666666663" y="120">
+~
+</text>
+<line x1="431.3333333333333" x2="448.3333333333333" y1="88" y2="104"/>
+<rect class="node" height="32" rx="5" ry="5" width="72" x="412.3333333333333" y="104"/>
+<text class="node" x="448.3333333333333" y="120">
+"term"
+</text>
+<line x1="431.3333333333333" x2="523" y1="88" y2="104"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="505" y="104"/>
+<text class="leaf" x="523" y="120">
+~
+</text>
+<line x1="431.3333333333333" x2="609" y1="88" y2="104"/>
+<rect class="node" height="32" rx="5" ry="5" width="72" x="573" y="104"/>
+<text class="node" x="609" y="120">
+"term"
+</text>
+<line x1="253.66666666666663" x2="253.66666666666663" y1="136" y2="152"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="35.99999999999997" x="235.66666666666666" y="152"/>
+<text class="leaf" x="253.66666666666663" y="168">
+SOI
+</text>
+<line x1="448.3333333333333" x2="448.3333333333333" y1="136" y2="152"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="48" x="424.3333333333333" y="152"/>
+<text class="leaf" x="448.3333333333333" y="168">
+expr
+</text>
+<line x1="609" x2="609" y1="136" y2="152"/>
+<rect class="leaf" height="32" rx="5" ry="5" width="36" x="591" y="152"/>
+<text class="leaf" x="609" y="168">
+EOI
+</text>
+<style>
+svg line {
+    stroke: black;
+}
+
+svg rect {
+    fill: black;
+    stroke: none;
+    /*stroke-width: 0.2;*/
+}
+
+svg rect.node {
+    /*fill: #ff5246*/
+}
+
+svg rect.leaf {
+    fill: #77c63d
+}
+
+svg text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+    color: aliceblue;
+    fill: white;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+svg text.node {
+
+}
+
+svg text.leaf {
+
+}
+
+</style>
+</svg>

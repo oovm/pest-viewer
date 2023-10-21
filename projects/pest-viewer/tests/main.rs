@@ -1,33 +1,30 @@
 use pest_viewer::SvgPlotter;
 
-
 #[test]
 fn ready() {
     println!("it works!")
 }
 
 #[test]
-fn test_classes() {
+fn test_calculator() {
     let plotter = SvgPlotter::default();
-    let text = r##"
-class ClassStatement {
-    DecoratorCall* ModifierCall* ^KW_CLASS (name:Identifier)
-}
-class ClassBlock {
-    '{' '|'? Expression '}'
-}
-token {
-    OP_REMARK: '^'
-}
-"##;
-    let cst = pest_vm::Vm::parse(text, BootstrapRule::Root).unwrap();
-    println!("Short Form:\n{}", cst);
+
+    let boot = pest_meta::parse_and_optimize(include_str!("grammar.pest")).unwrap();
+    let vm = pest_vm::Vm::new(boot.1);
+    let cst = vm.parse("grammar_rules", include_str!("calculator.pest")).unwrap();
+    println!("{:#?}", cst);
     let tree = plotter.draw(cst);
-    svg::save("tests/bootstrap.svg", &tree).unwrap();
+    svg::save("tests/calculator.svg", &tree).unwrap();
 }
 
-// fn main() {
-//     let root = tree();
-//     let layout = layout_position(&Tree, &root);
-//     println!("{:?}", layout)
-// }
+#[test]
+fn test_json() {
+    let plotter = SvgPlotter::default();
+
+    let boot = pest_meta::parse_and_optimize(include_str!("json.pest")).unwrap();
+    let vm = pest_vm::Vm::new(boot.1);
+    let cst = vm.parse("json", include_str!("example.json")).unwrap();
+    println!("{:#?}", cst);
+    let tree = plotter.draw(cst);
+    svg::save("tests/json.svg", &tree).unwrap();
+}
