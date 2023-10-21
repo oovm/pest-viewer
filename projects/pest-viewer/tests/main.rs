@@ -20,7 +20,6 @@ fn test_calculator() {
 #[test]
 fn test_json() {
     let plotter = SvgPlotter::default();
-
     let boot = pest_meta::parse_and_optimize(include_str!("json.pest")).unwrap();
     let vm = pest_vm::Vm::new(boot.1);
     let cst = vm.parse("json", include_str!("example.json")).unwrap();

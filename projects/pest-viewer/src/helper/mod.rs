@@ -19,7 +19,7 @@ where
 }
 
 /// white space is not child
-fn has_child<R>(node: &Pair<R>) -> bool
+pub fn has_child<R>(node: &Pair<R>) -> bool
 where
     R: RuleType,
 {
@@ -32,7 +32,7 @@ where
     false
 }
 /// white space is not child
-fn get_children<'i, R>(node: &Pair<'i, R>) -> Vec<Pair<'i, R>>
+pub fn get_children<'i, R>(node: &Pair<'i, R>) -> Vec<Pair<'i, R>>
 where
     R: RuleType,
 {

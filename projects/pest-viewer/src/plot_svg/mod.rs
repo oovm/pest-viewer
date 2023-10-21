@@ -1,7 +1,7 @@
 use pest::iterators::{Pair, Pairs};
 use std::{borrow::Cow, cmp::max};
 
-use crate::helper::width_hint;
+use crate::helper::{get_children, has_child, width_hint};
 use pest::RuleType;
 use shape_svg::ToSVG;
 use svg::{
@@ -41,7 +41,7 @@ where
     }
 
     fn children(&self, node: Pair<'i, R>) -> impl Iterator<Item = Pair<'i, R>> {
-        node.into_inner().filter(|s| !s.as_rule().is_ignore())
+        get_children(&node).into_iter()
     }
 
     fn dimensions(&self, node: Pair<'i, R>) -> TreeBox {
@@ -83,18 +83,33 @@ where
             }
 
             let mut text = Text::new().set("x", area.min.x + area.width() / 2.0).set("y", area.min.y + area.height() / 2.0);
-            if pair.has_child(false) {
-                text = text.add(svg::node::Text::new(format!("{:?}", pair.as_rule()))).set("class", "node");
+            if has_child(&pair) {
+                text = text.add(svg::node::Text::new(format!("{:?}", pair.as_rule()).trim_matches('"'))).set("class", "node");
                 document = document.add(area.to_svg().set("rx", 5).set("ry", 5).set("class", "node"));
             }
             else {
-                text = text.add(svg::node::Text::new(format!("{}", pair.as_str()))).set("class", "leaf");
+                text = text.add(svg::node::Text::new(safe_html(pair.as_str()))).set("class", "leaf");
                 document = document.add(area.to_svg().set("rx", 5).set("ry", 5).set("class", "leaf"));
             }
             document = document.add(text);
         }
         document.add(svg::node::element::Style::new(include_str!("style.css"))).set("viewBox", (0, 0, max.x, max.y))
     }
+}
+
+fn safe_html(s: &str) -> String {
+    let mut out = String::with_capacity(s.len());
+    for c in s.chars() {
+        match c {
+            '<' => out.push_str("&lt;"),
+            '>' => out.push_str("&gt;"),
+            '&' => out.push_str("&amp;"),
+            '"' => out.push_str("&quot;"),
+            '\'' => out.push_str("&apos;"),
+            _ => out.push(c),
+        }
+    }
+    out
 }
 
 impl SvgPlotter {
